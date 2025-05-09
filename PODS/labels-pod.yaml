@@ -1,0 +1,11 @@
+##command to add label => kubectl label pod hello-world namespace=dogfood
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world    
+  labels:
+    namespace: dogfood
+spec:
+  containers:
+  - image: nginx
+    name: hello-world

@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: zodiac-academy
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: first-project
+    spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+      containers:
+      - name: zodiac-academy
+        image: ghcr.io/arunalk/first-project:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100M
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        ports:
+        - containerPort: 8080
+  selector:
+    matchLabels:
+      app: first-project

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        name: hello-world
+    spec:
+      containers:
+      - image: nginx
+        name: hello-world
+  selector:
+    matchLabels:
+      name: hello-world
