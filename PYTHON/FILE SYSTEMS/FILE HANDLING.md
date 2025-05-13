@@ -42,6 +42,8 @@ file.close()
 
 ## ✅ Using with to Manage Files (Recommended)
 
+How to overcome the above problem by using 'with' keyword
+
 ```python3
 with open("file.txt", "r") as file:
     contents = file.read()

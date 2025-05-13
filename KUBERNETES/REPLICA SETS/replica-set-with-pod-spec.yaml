@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: zodiac-academy
+  name: first-project
 spec:
   replicas: 3
   template:
@@ -12,7 +12,7 @@ spec:
       imagePullSecrets:
       - name: ghcr-secret
       containers:
-      - name: zodiac-academy
+      - name: first-project
         image: ghcr.io/arunalk/first-project:latest
         imagePullPolicy: IfNotPresent
         resources:

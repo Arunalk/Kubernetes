@@ -68,19 +68,8 @@ with open('/Users/username/Documents/data/file.txt', 'r') as file:
 
 # 🧰 Using `pathlib` for Path Operations in Python
 
-Python's `pathlib` module offers an object-oriented approach to handling filesystem paths, providing a more intuitive and readable way to work with files and directories across different operating systems.:contentReference[oaicite:6]{index=6}
+Python's `pathlib` module offers an object-oriented approach to handling filesystem paths, providing a more intuitive and readable way to work with files and directories across different operating systems.
 
----
-
-## 📌 What is `pathlib`?
-
-:contentReference[oaicite:8]{index=8}:contentReference[oaicite:10]{index=10}
-
-:contentReference[oaicite:12]{index=12}:contentReference[oaicite:14]{index=14}
-
-:contentReference[oaicite:16]{index=16}:contentReference[oaicite:18]{index=18}
-
----
 
 ## 📝 Example: Working with Paths
 
