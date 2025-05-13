@@ -2,7 +2,7 @@
 
 ## 📘 Using `readlines()`
 
-The `readlines()` function reads all lines from a file and returns them as a list. While simple, handling CSV data this way can be cumbersome, especially for extracting specific rows or columns.:contentReference[oaicite:2]{index=2}
+The `readlines()` function reads all lines from a file and returns them as a list. While simple, handling CSV data this way can be cumbersome, especially for extracting specific rows or columns.
 
 ```python
 with open("weather_data.csv") as data_file:
