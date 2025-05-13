@@ -24,7 +24,7 @@ with open("weather_data.csv") as data_file:
     print(temp)
 ```
 
-## 📙 Using pandas
+## 📙 Using pandas(RECOMMENDED)
 
 The pandas library offers powerful data structures and functions for data analysis, making it easier to handle CSV files.
 
