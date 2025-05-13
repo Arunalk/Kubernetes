@@ -1,0 +1,10 @@
+print("Hello World")
+print("Hello" + "World")
+print("Hello" + " " + "World")
+print("Hello"+input("USER NAME\n"))
+name = input("USER NAME\n")
+print(name)
+print(len(name))
+person = {"name": "Alice", "age": 25, "city": "New York"}
+print(person)
+print("Person details:", person['name'])

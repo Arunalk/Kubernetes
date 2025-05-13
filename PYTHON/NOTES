@@ -1,0 +1,44 @@
+BASH -- mv, copy, grep, awk, sort, unique, systemctl, path
+
+converting list to set can remove duplicates.
+Complex -  more like arbitary number. We can add some imaginary part such as i,j in the expression.
+upper()
+lower()
+strip() -> to remove whitespaces from beginning and end
+replace()
+split()
+format()
+
+important functions
+find
+endswith
+isalphanumeric
+isalpha
+isascii
+isdigit
+count
+lstrip
+replace
+join
+startswith
+
+Setfunctions
+add() - adding an item
+update() - merge
+remove() - removing an item
+pop() - to remove random item
+discard() 
+union()
+intersection()
+symmetric_difference()
+
+CI/CD
+write code
+unit test cases
+sonarcube - code quality check
+build image
+scanning the image
+deployed using helm
+incase of failure we are using --atomic flag, which rolbacks to previous version.
+
+kubeconfig/oidc => to connect to cluster
