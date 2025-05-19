@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: solaria
+  name: hello-world
   labels:
-    app: zodiac-academy
+    app: hello-world
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: zodiac-academy
+      app: hello-world
   template:
     metadata:
       labels:
-        app: zodiac-academy
+        app: hello-world
     spec:
       imagePullSecrets:
         - name: ghcr-secret
       containers:
-      - name: welcome-to-solaria
-        image: ghcr.io/arunalk/welcome-to-solaria:latest
+      - name: welcome-to-hello-world
+        image: ghcr.io/arunalk/welcome-to-hello-world:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
